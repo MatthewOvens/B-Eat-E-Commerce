@@ -12,6 +12,8 @@ import { LogoComponent } from './logo/logo.component';
 import { TastoIniziaComponent } from './tasto-inizia/tasto-inizia.component';
 import { LendingPageBackgroundComponent } from './lending-page-background/lending-page-background.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -24,13 +26,15 @@ import { FooterComponent } from './footer/footer.component';
     TastoIniziaComponent,
     LendingPageBackgroundComponent,
     FooterComponent,
+    CarouselComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
