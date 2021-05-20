@@ -34,7 +34,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    NgbModule
+    NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

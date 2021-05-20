@@ -1,0 +1,54 @@
+
+ .hero-button{
+     font-size: 20px;
+     color: #fff;
+     width: 200px;
+     height: 70px;
+     //display: inline-block;
+     display: flex;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 13px 20px;
+     border-radius: 30px;
+     font-weight: bold;
+     background: rgb(5, 133, 33);
+     cursor: pointer;
+     //border: 2px solid orange;
+     
+     margin-bottom: 250px;
+     align-content: center;
+     justify-content: center;
+ }
+
+ .hero-button:hover{
+     background: #fff;
+     color: green;
+     border: none;
+     
+ 
+ }
+ .pulsate{
+     /*-webkit-*/animation: pulsate 3s ease-in-out;
+     /*-webkit-*/animation-iteration-count:infinite ;
+     //opacity: .3;
+     display: flex;
+     color: white;
+     position: absolute;
+     align-content: center;
+     justify-content: center;
+
+ }
+
+ /*@-webkit-keyframes pulsate{
+     0% {
+         opacity: .3;
+     }
+     50% {
+         opacity: 1;
+     }
+     100% {
+         opacity: .3;
+     }
+ 
+ }*/
+
