@@ -1,23 +1,19 @@
 
  .hero-button{
-     font-size: 20px;
-     color: #fff;
      width: 200px;
-     height: 70px;
-     //display: inline-block;
-     display: flex;
-     text-decoration: none;
-     text-transform: uppercase;
-     padding: 13px 20px;
-     border-radius: 30px;
+     height: 80px;
+     font-size: 30px;
      font-weight: bold;
-     background: rgb(5, 133, 33);
-     cursor: pointer;
-     //border: 2px solid orange;
-     
+     border-radius: 30px;
+     background-color:rgb(243, 70, 26)  ;
+     border: none;
      margin-bottom: 250px;
-     align-content: center;
-     justify-content: center;
+     position: absolute;
+     top: 48%;
+     left: 45%;
+     font-family: 'Sarabun', sans-serif;
+     border: black solid
+     
  }
 
  .hero-button:hover{
@@ -27,19 +23,18 @@
      
  
  }
- .pulsate{
-     /*-webkit-*/animation: pulsate 3s ease-in-out;
-     /*-webkit-*/animation-iteration-count:infinite ;
-     //opacity: .3;
-     display: flex;
-     color: white;
-     position: absolute;
-     align-content: center;
-     justify-content: center;
+//  .pulsate{
+//     //  /*-webkit-*/animation: pulsate 3s ease-in-out;
+//     //  /*-webkit-*/animation-iteration-count:infinite ;
+//     //  //opacity: .3;
+//     //  display: flex;
+//     //  color: white;
+     
+     
 
- }
+//  }
 
- /*@-webkit-keyframes pulsate{
+ @-webkit-keyframes pulsate{
      0% {
          opacity: .3;
      }
@@ -50,5 +45,5 @@
          opacity: .3;
      }
  
- }*/
+ }
 
