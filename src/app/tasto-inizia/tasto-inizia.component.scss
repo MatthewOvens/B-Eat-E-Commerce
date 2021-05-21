@@ -1,49 +1,48 @@
+.hero-button{
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color:rgb(255, 30, 0)  ;
+    border: none;
+    margin-bottom: 250px;
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    font-family: 'Luckiest Guy', cursive;
+    border: black solid;
 
- .hero-button{
-     width: 200px;
-     height: 80px;
-     font-size: 30px;
-     font-weight: bold;
-     border-radius: 30px;
-     background-color:rgb(243, 70, 26)  ;
-     border: none;
-     margin-bottom: 250px;
-     position: absolute;
-     top: 48%;
-     left: 45%;
-     font-family: 'Sarabun', sans-serif;
-     border: black solid
-     
- }
 
- .hero-button:hover{
-     background: #fff;
-     color: green;
-     border: none;
-     
- 
- }
+}
+
+.hero-button:hover{
+    background:orange;
+    color: white;
+    border: black solid;
+
+
+}
 //  .pulsate{
-//     //  /*-webkit-*/animation: pulsate 3s ease-in-out;
-//     //  /*-webkit-*/animation-iteration-count:infinite ;
+//     //  /-webkit-/animation: pulsate 3s ease-in-out;
+//     //  /-webkit-/animation-iteration-count:infinite ;
 //     //  //opacity: .3;
 //     //  display: flex;
 //     //  color: white;
-     
-     
+
+
 
 //  }
 
- @-webkit-keyframes pulsate{
-     0% {
-         opacity: .3;
-     }
-     50% {
-         opacity: 1;
-     }
-     100% {
-         opacity: .3;
-     }
- 
- }
+@-webkit-keyframes pulsate{
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
 
+}

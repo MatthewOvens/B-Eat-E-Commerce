@@ -14,6 +14,8 @@ import { LendingPageBackgroundComponent } from './lending-page-background/lendin
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
+import { PageOneComponent } from './page-one/page-one.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     LendingPageBackgroundComponent,
     FooterComponent,
     CarouselComponent,
+    PageOneComponent,
+    NavbarComponent,
 
   ],
   imports: [
