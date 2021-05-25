@@ -1,175 +1,367 @@
-*{
-    text-decoration: none;
-    list-style: none;
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+.logo{
+  margin-right: 10px;
+  float: left;
+  margin-top:2px;
+}
+
+.elementiSinistra{
+  display: block;
+  width: 130px;
+  height: 50px;
+  float: left;
+  margin: 35px;
+  margin-left: 50px;
+  list-style-type: none;
+  background-size:cover;
+}
+
+.elementiDestra{
+  
+  width: 150px;
+  height: 50px;
+  float: right;
+  margin-top: 35px;
+  list-style-type: none;
+}
+
+.buttonSinistra{
+  
+  
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: rgba(45,43,43,1);
+  font-size: 35px;
+  font-weight: bold;
+  // -webkit-text-stroke: 2px black;
+  font-family: 'Akronim';color: rgb(247, 3, 3); /* width and color */
+  transition: transform 1s ease, color 1s ease;
+  
+}
+.buttonSinistra:hover{
+  color: orange;
+  transform: translateY(-20px);
+  animation: 2s fiamme infinite alternate linear; 
+  // body {
+  //   width: 100%;
+  //   position: relative;
+  //   background-color: #000;
+  //   padding: 0;
+  //   margin: 0;
+  // }
+  .mo-fire {
+    width: 90px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
   }
-  body{
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  nav{
-    background: #0082e6;
-    height: 80px;
+  .mo-fire svg {
     width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
-  label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
-  
-  section{
+  .flame {
+    animation-name: flamefly;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: 50% 50% 0;
     margin: 0;
-    //background: url(../image/bg1.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+  }
+  .flame.one {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+  }
+  .flame3.two{
+    animation-duration: 1s;
+    animation-delay: 1s;
   }
   
-  /*----------------------------------------------------------------------------*/
-  * {box-sizing: border-box}
+  .flame-main {
+    animation-name: flameWobble;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .flame-main.one {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.two {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.three {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.four {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.five {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  @keyframes flameWobble {
+    50% {
+      transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+    }
+  }
+  @keyframes flamefly {
+    0%{
+      transform: translate(0) rotate(180deg);
+    }
+     50% {
+       opacity: 1;
+    }
+    100% {
+      transform: translate(-20px, -100px) rotate(180deg);
+      opacity: 0;
+    }
   
-  /* Add padding to containers */
-  .container {
-    height: 100vh;
-    padding: 60px;
-    float: right;
-    margin: auto;
   }
   
-  /* Full-width input fields */
-  h1{
-    color: white;
   }
+.buttonDestra{
+  color:white;
+  width:100%;
+  height:100%;
+  border: none;
+  background-color: rgba(45,43,43,1);
+  font-size: 22px;
+  font-weight: bold;
+}
+.buttonDestra:hover{
+    text-decoration: underline;
+    
+    
+}
+
+@keyframes fiamme {
+  0%   { text-shadow: 0 3px 3px red, 0 0 3px red,
+    0 0 2px orange,
+    0 0 0 yellow,
+    0 0 0.5px yellow,
+    -2px -1px 0.5px yellow,
+    1.5px -2px 2px yellow; }
+  25%   { text-shadow: 0 3px 3px red, 0 0 3px red,
+    0 0 2px orange,
+    0 0 0 yellow,
+    0 0 0.5px yellow,
+    -2px -1px 0.5px yellow,
+    1.5px -2px 2px yellow; }
+  50%   { text-shadow: 0 3px 3px red, 0 0 3px red,
+    0 0 2px orange,
+    0 0 0 yellow,
+    0 0 0.5px yellow,
+    -2px -1px 0.5px yellow,
+    1.5px -2px 2px yellow; }
+  75%  { text-shadow: 0 3px 3px red, 0 0 3px red,
+    0 0 2px orange,
+    0 0 0 yellow,
+    0 0 0.5px yellow,
+    -2px -1px 0.5px yellow,
+    1.5px -2px 2px yellow; }
+  100%   { text-shadow: 0 3px 3px red, 0 0 3px red,
+    0 0 2px orange,
+    0 0 0 yellow,
+    0 0 0.5px yellow,
+    -2px -1px 0.5px yellow,
+    1.5px -2px 2px yellow; }
+}
+.div{
+  overflow: hidden;
+  display: block;
+  margin-top: 0;
+  height: 150px;
+  background: rgb(22,22,22);
+background: linear-gradient(78deg, rgba(22,22,22,1) 6%, rgba(45,43,43,1) 17%, rgba(45,43,43,1) 40%);
+}
+
+
+
+
+
+// *{
+//     text-decoration: none;
+//     list-style: none;
+//   }
+//   body{
+//     margin: 0;
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//   }
+//   nav{
+//     background: #ffffff;
+//     height: 80px;
+//     width: 100%;
+//   }
+//   label.logo{
+//     color: white;
+//     font-size: 35px;
+//     line-height: 80px;
+//     padding: 0 100px;
+//     font-weight: bold;
+//   }
+//   nav ul{
+//     float: right;
+//     margin-right: 20px;
+//   }
+//   nav ul li{
+//     display: inline-block;
+//     line-height: 80px;
+//     margin: 0 5px;
+//   }
+//   nav ul li a{
+//     color: rgb(0, 0, 0);
+//     font-size: 17px;
+//     padding: 7px 13px;
+//     border-radius: 3px;
+//     text-transform: uppercase;
+//   }
+//   a.active,a:hover{
+//     background: #1b9bff;
+//     transition: .5s;
+//   }
+//   .checkbtn{
+//     font-size: 30px;
+//     color: white;
+//     float: right;
+//     line-height: 80px;
+//     margin-right: 40px;
+//     cursor: pointer;
+//     display: none;
+//   }
+//   #check{
+//     display: none;
+//   }
+//   @media (max-width: 952px){
+//     label.logo{
+//       font-size: 30px;
+//       padding-left: 50px;
+//     }
+//     nav ul li a{
+//       font-size: 16px;
+//     }
+//   }
+//   @media (max-width: 858px){
+//     .checkbtn{
+//       display: block;
+//     }
+//     ul{
+//       position: fixed;
+//       width: 100%;
+//       height: 100vh;
+//       background: #ffffff;
+//       top: 80px;
+//       left: -100%;
+//       text-align: center;
+//       transition: all .5s;
+//     }
+//     nav ul li{
+//       display: block;
+//       margin: 50px 0;
+//       line-height: 30px;
+//     }
+//     nav ul li a{
+//       font-size: 20px;
+//     }
+//     a:hover,a.active{
+//       background: none;
+//       color: #ffffff;
+//     }
+//     #check:checked ~ ul{
+//       left: 0;
+//     }
+//   }
   
-  p{
-    color: white;
-  }
+//   section{
+//     margin: 0;
+//     //background: url(../image/bg1.jpg) no-repeat;
+//     background-size: cover;
+//     height: 100vh;
+//   }
   
-  b{
-    color: white;
-  }
+//   /*----------------------------------------------------------------------------*/
+//   * {box-sizing: border-box}
   
-  input[type=text], input[type=password] {
-    width: 50%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
+//   /* Add padding to containers */
+//   .container {
+//     height: 100vh;
+//     padding: 60px;
+//     float: right;
+//     margin: auto;
+//   }
   
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
+//   /* Full-width input fields */
+//   h1{
+//     color: black;
+//   }
   
-  /* Overwrite default styles of hr */
-  hr {
-    width: auto;
-    border: 1px solid #0082e6;
-    margin-bottom: 10px;
-  }
+//   p{
+//     color: black;
+//   }
   
-  /* Set a style for the submit/register button */
-  .registerbtn {
-    background-color: #0082e6;
-    color: white;
-    padding: 10px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 20%;
-    opacity: 0.9;
-  }
+//   b{
+//     color: black;
+//   }
   
-  .registerbtn:hover {
-    opacity:1;
-  }
+//   input[type=text], input[type=password] {
+//     width: 50%;
+//     padding: 10px;
+//     margin: 5px 0 22px 0;
+//     display: inline-block;
+//     border: none;
+//     background: #f1f1f1;
+//   }
   
-  /* Add a blue text color to links */
-  a {
-    color: #0082e6;
-  }
+//   input[type=text]:focus, input[type=password]:focus {
+//     background-color: #ddd;
+//     outline: none;
+//   }
   
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin{
-    height: 40px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
+//   /* Overwrite default styles of hr */
+//   hr {
+//     width: auto;
+//     border: 1px solid #0082e6;
+//     margin-bottom: 10px;
+//   }
   
-  #accedi{
-    color: black;
-  }
+//   /* Set a style for the submit/register button */
+//   .registerbtn {
+//     background-color: #0082e6;
+//     color: white;
+//     padding: 10px 20px;
+//     margin: 8px 0;
+//     border: none;
+//     cursor: pointer;
+//     width: 20%;
+//     opacity: 0.9;
+//   }
+  
+//   .registerbtn:hover {
+//     opacity:1;
+//   }
+  
+//   /* Add a blue text color to links */
+//   a {
+//     color: #0082e6;
+//   }
+  
+//   /* Set a grey background color and center the text of the "sign in" section */
+//   .signin{
+//     height: 40px;
+//     text-align: center;
+//     background-color: #f1f1f1;
+//   }
+  
+//   #accedi{
+//     color: black;
+//   }
+
+
+
