@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PageOneComponent } from './page-one/page-one.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     CarouselComponent,
     PageOneComponent,
     NavbarComponent,
+    SearchComponent,
 
   ],
   imports: [
