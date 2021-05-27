@@ -17,7 +17,7 @@
 
 
                                     <!--RICERCA-->
-                                    <div style="width: 100%;">
+                                    <div style="width: 100%;" >
                                         <div>
                                             <div data-test-id="search-predict-overlay" class="c-searchInput-content-overlay"></div>
                                             <div class="c-searchInput-container">
@@ -53,7 +53,7 @@
                                     </div>
                                     <!-- FINE RICERCA -->
                                     <!--RISTORANTE-->
-                                    <div infinite-scroll-distance="300" data-search-results-container="" data-test-id="searchresults">
+                                    <div infinite-scroll-distance="300" data-search-results-container="" data-test-id="searchresults" *ngFor="let i of listaRistoranti">
                                         <div class="c-listing">
                                             <div data-test-id="openrestaurants" data-search-container="openrestaurants"
                                                 class="c-listing-loader">
@@ -61,35 +61,34 @@
                                                     <section data-restaurant-id="220379" data-test-id="restaurant" data-search-item=""
                                                         tabindex="0"
                                                         class="c-listing-item  c-card c-card--rounded--large c-listing-item--withHeader">
-                                                        <a href="#" title="Vedi il menu per Mido Ristorante" data-test-id="restaurant_info"
+                                                        <a href="http://localhost:4200/homepage/page-one/pagina-ristorante" title="Vedi il menu per {{i.nome}}" data-test-id="restaurant_info"
                                                             class="c-listing-item-link u-clearfix">
 
                                                             <!--IMAGGINE RISTORANTE-->
                                                             <div style="width: 100%;">
                                                                 <div class="c-listing-item-header"><img
-                                                                    src="../../assets/risto2.jpg"
+                                                                    src="{{i.img1}}"
                                                                     alt="" loading="lazy" data-test-id="restaurant-cuisine-image"
                                                                     class="c-listing-item-header-img"> <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 320 36"><g fill="none" fill-rule="nonzero"><g opacity=".3"><path fill="#000" d="M0 0l320 36H0z"/><path fill="#FFF" d="M0 0l320 36H0z"/></g><path fill="#FFF" d="M0 12l320 24H0z" opacity=".6"/><path fill="#FFF" d="M0 24l320 12H0z"/></g></svg>
                                                                 </div>
                                                             </div>
-
                                                             <!--LOGO-->
                                                             <div data-test-id="restaurant_logo" class="c-listing-item-img">
-                                                                <img src="../../assets/risto1.gif"
+                                                                <img src="{{i.img2}}"
                                                                     alt="" width="50" height="50" loading="lazy"
                                                                     class="c-listing-item-imgItem"></div>
                                                             <div class="c-listing-item-info">
                                                                 <h3 data-test-id="restaurant_name" data-search-name=""
                                                                     class="c-listing-item-title">
-                                                                    Mido Ristorante Arabo
+                                                                    {{i.nome}}
                                                                 </h3>
 
                                                                 <div style="width: 100%;">
                                                                     <p data-test-id="restaurant-cuisines"
                                                                         class="c-listing-item-text c-badge c-listing-item-badge c-badge--transparent c-badge--noPad">
-                                                                        Medio Orientale
+                                                                        {{i.tipo}}
                                                                         <span class="c-badge-icon"></span>
-                                                                        Arabo
+                                                                        {{i.cucina}}
                                                                         <!---->
                                                                     </p>
                                                                 </div>
@@ -104,10 +103,10 @@
                                                                                 <span class="c-rating--fill c-ratings--fill-53"></span>
                                                                             </div> <span data-test-id="restaurant-rating"
                                                                                 class="is-visuallyHidden">
-                                                                                5.27 stelle su 6
+                                                                                {{i.mediaValutazione}} stelle su 6
                                                                             </span> <strong data-test-id="rating"
                                                                                 class="c-listing-item-ratingText">
-                                                                                30
+                                                                                {{i.numRecensioni}}
                                                                             </strong>
                                                                         </div>
                                                                     </div>
@@ -132,7 +131,7 @@
                                                                                         </svg></span>
                                                                                     <p
                                                                                         class="c-listing-item-text c-listing-item-detailsRow-text c-badge c-listing-item-badge c-badge--transparent c-badge--noPad">
-                                                                                        Consegna: € 1.90
+                                                                                        Consegna: € {{i.consegna}}
                                                                                         <span class="c-badge-icon"></span>
                                                                                         Ordine Minimo: € 5
                                                                                     </p>
@@ -156,7 +155,7 @@
                                                                                         </svg></span>
                                                                                     <p
                                                                                         class="c-listing-item-text c-listing-item-detailsRow-text c-badge c-listing-item-badge c-badge--transparent c-badge--noPad">
-                                                                                        Via Pietro Custodi, 4, Milano, 20136
+                                                                                        {{i.indirizzo}}
                                                                                     </p>
                                                                                 </div>
                                                                             </div>

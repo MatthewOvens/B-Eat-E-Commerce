@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PageOneComponent } from './page-one/page-one.component';
+import { PaginaRistoranteComponent } from './pagina-ristorante/pagina-ristorante.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: '', //Redirec all'homepage in caso di path vuoto
     redirectTo: '/homepage',
     pathMatch: 'full' //
+  },
+  {
+    path:'homepage/page-one/pagina-ristorante',
+    component: PaginaRistoranteComponent
   },
   {
     path: '**', //Wildcard route - generico

@@ -17,6 +17,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { PageOneComponent } from './page-one/page-one.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
+import { PaginaRistoranteComponent } from './pagina-ristorante/pagina-ristorante.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { SearchComponent } from './search/search.component';
     PageOneComponent,
     NavbarComponent,
     SearchComponent,
+    PaginaRistoranteComponent,
 
   ],
   imports: [
