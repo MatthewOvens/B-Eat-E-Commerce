@@ -18,7 +18,7 @@ import { PageOneComponent } from './page-one/page-one.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { PaginaRistoranteComponent } from './pagina-ristorante/pagina-ristorante.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { PaginaRistoranteComponent } from './pagina-ristorante/pagina-ristorante
     BrowserAnimationsModule,
     MatMenuModule,
     NgbModule,
-
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
