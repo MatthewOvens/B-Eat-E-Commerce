@@ -38,7 +38,7 @@
                                                             </svg>
                                                         </span>
 
-                                                        <input id="dish-search" type="search" placeholder="Cerca per cucina o ristorante"
+                                                        <input id="dish-search" type="search" [formControl]="search" placeholder="Cerca per cucina o ristorante"
                                                             autocomplete="off" data-test-id="unified-input-box" class="c-searchInput"
                                                             data-search-input="">
 
@@ -53,7 +53,7 @@
                                     </div>
                                     <!-- FINE RICERCA -->
                                     <!--RISTORANTE-->
-                                    <div infinite-scroll-distance="300" data-search-results-container="" data-test-id="searchresults" *ngFor="let i of listaRistoranti">
+                                    <div infinite-scroll-distance="300" data-search-results-container="" data-test-id="searchresults" *ngFor="let i of foodList">
                                         <div class="c-listing">
                                             <div data-test-id="openrestaurants" data-search-container="openrestaurants"
                                                 class="c-listing-loader">

@@ -19,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { PaginaRistoranteComponent } from './pagina-ristorante/pagina-ristorante.component';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SearchPipe } from './pipes/search.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     NavbarComponent,
     SearchComponent,
     PaginaRistoranteComponent,
+    SearchPipe,
 
   ],
   imports: [
@@ -44,6 +46,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatMenuModule,
     NgbModule,
     MatDialogModule,
+    
+    FormsModule,  //si puo anche togliere?
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
