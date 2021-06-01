@@ -7,7 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  filter_value = '';
+  
   constructor() { }
   
   ngOnInit(): void {
@@ -15,10 +15,7 @@ export class SearchComponent implements OnInit {
   }
 
   search = new FormControl('');
-handleSearch(value:string){
-    console.log(value);
-    this.filter_value = value;
-  }
+
 
   @Output('search') searchEmitter = new EventEmitter<string>();
 }

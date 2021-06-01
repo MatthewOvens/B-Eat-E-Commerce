@@ -10,7 +10,7 @@ export class SearchPipe implements PipeTransform {
       return list;
     }
 
-    return list.filter(food => food.nome.toUpperCase().includes(text.toUpperCase()));
+    return list.filter(food => food.indirizzo.toUpperCase().includes(text.toUpperCase()));
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import food from '../files/food.json';
+import food from '../../files/food.json';
 @Component({
   selector: 'app-page-one',
   templateUrl: './page-one.component.html',
@@ -14,7 +14,7 @@ export class PageOneComponent implements OnInit {
   }
 
   handleSearch(value:string){
-    console.log(value);
+    
     this.filter_value = value;
   }
 
