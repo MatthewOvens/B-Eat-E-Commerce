@@ -1,4 +1,6 @@
-class Prodotto{
+
+
+export class Prodotto{
 
     constructor(private id:number, private nome:string, private ingredienti:string[]){
 

@@ -1,4 +1,6 @@
-class Ristorante{
+
+
+export class Ristorante{
 
     constructor(private id:number, private nome:string, private cucina:string,
                 private indirizzo:string, private menu:any[],
