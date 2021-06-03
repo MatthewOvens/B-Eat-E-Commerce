@@ -19,6 +19,7 @@ import { PaginaRistoranteComponent } from './pages/pagina-ristorante/pagina-rist
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+import { SearchBarInizialeComponent } from './components/search-bar-iniziale/search-bar-iniziale.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { SearchPipe } from './pipes/search.pipe';
     SearchComponent,
     PaginaRistoranteComponent,
     SearchPipe,
+    SearchBarInizialeComponent,
 
   ],
   imports: [
