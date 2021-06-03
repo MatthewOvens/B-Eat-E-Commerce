@@ -16,9 +16,11 @@ import { PageOneComponent } from './pages/page-one/page-one.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import { PaginaRistoranteComponent } from './pages/pagina-ristorante/pagina-ristorante.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+import { RestaurantViewerComponent } from './components/restaurant-viewer/restaurant-viewer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +36,7 @@ import { SearchPipe } from './pipes/search.pipe';
     SearchComponent,
     PaginaRistoranteComponent,
     SearchPipe,
+    RestaurantViewerComponent,
 
   ],
   imports: [

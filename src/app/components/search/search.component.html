@@ -1,50 +1,10 @@
 
-  <main id="skipToMain" role="main" style="width: 100%; text-align: center;">
-    <!---->
-    <div class="g-col g-span8--mid g-span9--wide c-sortBy" style="width: 100%;">
-      <div style="width: 100%;">
-
-
-        <!--RICERCA-->
-        <div style="width: 100%;">
-          <div>
-            <div data-test-id="search-predict-overlay" class="c-searchInput-content-overlay"></div>
-            <div class="c-searchInput-container">
-              <form class="c-searchInput-form">
-                <div class="c-searchInput-overlay-searchBar">
-
-
-                  <label for="dish-search" class="is-visuallyHidden">
-                    Cerca per cucina o ristorante
-                  </label>
-
-                  <!--ICONA RICERCA-->
-                  <span class="c-searchInput-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                      class="c-ficon c-ficon--eyeglass">
-                      <path
-                        d="M15.88 15.28a.42.42 0 1 1-.6.6L10.2 10.8a.42.42 0 1 1 .6-.6l5.08 5.08zm-9.56-2.65A6.32 6.32 0 1 1 6.32 0a6.32 6.32 0 0 1 0 12.63zm0-.84a5.47 5.47 0 1 0 0-10.95 5.47 5.47 0 0 0 0 10.95z">
-                      </path>
-                    </svg>
-                  </span>
-
-                  <input id="dish-search" type="search" [formControl]="search" spellcheck="false" autocomplete="none"
-                    placeholder="Cerca per cucina o ristorante" autocomplete="off" data-test-id="unified-input-box"
-                    class="c-searchInput" data-search-input="">
-
-                  <!---->
-                  <!---->
-                  <!---->
-                </div>
-
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- FINE RICERCA -->
-        <!--RISTORANTE-->
-
-        <!--FINE RISTORANTE-->
-      </div>
+<div class="search_wrap search_wrap_4">
+  <div class="search_box">
+    <div class="btn btn_common">
+      <i class="fas fa-search"></i>
     </div>
-  </main>
-
+    <input id="dish-search" class="input" type="search" [formControl]="search" spellcheck="false"
+        placeholder="Cerca per cucina o ristorante" autocomplete="off">
+  </div>
+</div>

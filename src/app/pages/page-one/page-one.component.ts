@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import food from '../../files/food.json';
+import food from '../../shared/food.json';
 @Component({
   selector: 'app-page-one',
   templateUrl: './page-one.component.html',
