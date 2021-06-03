@@ -19,7 +19,11 @@ import { PaginaRistoranteComponent } from './pages/pagina-ristorante/pagina-rist
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+
 import { RestaurantViewerComponent } from './components/restaurant-viewer/restaurant-viewer.component';
+
+import { SearchBarInizialeComponent } from './components/search-bar-iniziale/search-bar-iniziale.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,11 @@ import { RestaurantViewerComponent } from './components/restaurant-viewer/restau
     SearchComponent,
     PaginaRistoranteComponent,
     SearchPipe,
+
     RestaurantViewerComponent,
+
+    SearchBarInizialeComponent,
+
 
   ],
   imports: [
