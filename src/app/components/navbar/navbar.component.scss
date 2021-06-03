@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
-.logo{
+
+.logo {
   float: left;
   margin-right: 10px;
-  margin-top:2px;
+  margin-top: 2px;
 }
 
-.elementiSinistra{
+.elementiSinistra {
   display: block;
   width: 130px;
   height: 50px;
@@ -13,11 +14,11 @@
   margin: 35px;
   margin-left: 50px;
   list-style-type: none;
-  background-size:cover;
+  background-size: cover;
 }
 
-.elementiDestra{
-  
+.elementiDestra {
+
   width: 150px;
   height: 50px;
   float: right;
@@ -25,24 +26,28 @@
   list-style-type: none;
 }
 
-.buttonSinistra{
-  
-  
+.buttonSinistra {
+
+
   width: 100%;
   height: 100%;
   border: none;
-  background-color: rgba(45,43,43,1);
+  background-color: rgba(45, 43, 43, 1);
   font-size: 35px;
   font-weight: bold;
   // -webkit-text-stroke: 2px black;
-  font-family: 'Akronim';color: rgb(247, 3, 3); /* width and color */
+  font-family: 'Akronim';
+  color: rgb(247, 3, 3);
+  /* width and color */
   transition: transform 1s ease, color 1s ease;
-  
+
 }
-.buttonSinistra:hover{
+
+.buttonSinistra:hover {
   color: orange;
   transform: translateY(-20px);
-  animation: 2s fiamme infinite alternate linear; 
+  animation: 2s fiamme infinite alternate linear;
+
   // body {
   //   width: 100%;
   //   position: relative;
@@ -56,6 +61,7 @@
     display: flex;
     justify-content: center;
   }
+
   .mo-fire svg {
     width: 100%;
     height: 70px;
@@ -63,6 +69,7 @@
     display: flex;
     justify-content: center;
   }
+
   .flame {
     animation-name: flamefly;
     animation-duration: 0.5s;
@@ -72,113 +79,141 @@
     transform-origin: 50% 50% 0;
     margin: 0;
   }
+
   .flame.one {
     animation-delay: 0.5s;
     animation-duration: 1s;
   }
-  .flame3.two{
+
+  .flame3.two {
     animation-duration: 1s;
     animation-delay: 1s;
   }
-  
+
   .flame-main {
     animation-name: flameWobble;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+
   .flame-main.one {
     animation-duration: 1s;
     animation-delay: 1s;
   }
+
   .flame-main.two {
     animation-duration: 1s;
     animation-delay: 1s;
   }
+
   .flame-main.three {
     animation-duration: 1s;
     animation-delay: 1s;
   }
+
   .flame-main.four {
     animation-duration: 1s;
     animation-delay: 1s;
   }
+
   .flame-main.five {
     animation-duration: 1s;
     animation-delay: 1s;
   }
+
   @keyframes flameWobble {
     50% {
-      transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+      transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
     }
   }
+
   @keyframes flamefly {
-    0%{
+    0% {
       transform: translate(0) rotate(180deg);
     }
-     50% {
-       opacity: 1;
+
+    50% {
+      opacity: 1;
     }
+
     100% {
       transform: translate(-20px, -100px) rotate(180deg);
       opacity: 0;
     }
-  
+
   }
-  
-  }
-.buttonDestra{
-  color:white;
-  width:100%;
-  height:100%;
+
+}
+
+.buttonDestra {
+  color: white;
+  width: 100%;
+  height: 100%;
   border: none;
-  background-color: rgba(45,43,43,1);
+  background-color: rgba(45, 43, 43, 1);
   font-size: 22px;
   font-weight: bold;
 }
-.buttonDestra:hover{
-    text-decoration: underline;
-    
-    
+
+.buttonDestra:hover {
+  text-decoration: underline;
+
+
 }
 
 @keyframes fiamme {
-  0%   { text-shadow: 0 3px 3px red, 0 0 3px red,
-    0 0 2px orange,
-    0 0 0 yellow,
-    0 0 0.5px yellow,
-    -2px -1px 0.5px yellow,
-    1.5px -2px 2px yellow; }
-  25%   { text-shadow: 0 3px 3px red, 0 0 3px red,
-    0 0 2px orange,
-    0 0 0 yellow,
-    0 0 0.5px yellow,
-    -2px -1px 0.5px yellow,
-    1.5px -2px 2px yellow; }
-  50%   { text-shadow: 0 3px 3px red, 0 0 3px red,
-    0 0 2px orange,
-    0 0 0 yellow,
-    0 0 0.5px yellow,
-    -2px -1px 0.5px yellow,
-    1.5px -2px 2px yellow; }
-  75%  { text-shadow: 0 3px 3px red, 0 0 3px red,
-    0 0 2px orange,
-    0 0 0 yellow,
-    0 0 0.5px yellow,
-    -2px -1px 0.5px yellow,
-    1.5px -2px 2px yellow; }
-  100%   { text-shadow: 0 3px 3px red, 0 0 3px red,
-    0 0 2px orange,
-    0 0 0 yellow,
-    0 0 0.5px yellow,
-    -2px -1px 0.5px yellow,
-    1.5px -2px 2px yellow; }
+  0% {
+    text-shadow: 0 3px 3px red, 0 0 3px red,
+      0 0 2px orange,
+      0 0 0 yellow,
+      0 0 0.5px yellow,
+      -2px -1px 0.5px yellow,
+      1.5px -2px 2px yellow;
+  }
+
+  25% {
+    text-shadow: 0 3px 3px red, 0 0 3px red,
+      0 0 2px orange,
+      0 0 0 yellow,
+      0 0 0.5px yellow,
+      -2px -1px 0.5px yellow,
+      1.5px -2px 2px yellow;
+  }
+
+  50% {
+    text-shadow: 0 3px 3px red, 0 0 3px red,
+      0 0 2px orange,
+      0 0 0 yellow,
+      0 0 0.5px yellow,
+      -2px -1px 0.5px yellow,
+      1.5px -2px 2px yellow;
+  }
+
+  75% {
+    text-shadow: 0 3px 3px red, 0 0 3px red,
+      0 0 2px orange,
+      0 0 0 yellow,
+      0 0 0.5px yellow,
+      -2px -1px 0.5px yellow,
+      1.5px -2px 2px yellow;
+  }
+
+  100% {
+    text-shadow: 0 3px 3px red, 0 0 3px red,
+      0 0 2px orange,
+      0 0 0 yellow,
+      0 0 0.5px yellow,
+      -2px -1px 0.5px yellow,
+      1.5px -2px 2px yellow;
+  }
 }
-.div{
+
+.div {
   overflow: hidden;
   display: block;
   margin-top: 0;
   height: 140px;
-  background: rgb(22,22,22);
-background: linear-gradient(78deg, rgba(22,22,22,1) 6%, rgba(45,43,43,1) 17%, rgba(45,43,43,1) 40%);
+  background: rgb(22, 22, 22);
+  background: linear-gradient(78deg, rgba(22, 22, 22, 1) 6%, rgba(45, 43, 43, 1) 17%, rgba(45, 43, 43, 1) 40%);
 }
