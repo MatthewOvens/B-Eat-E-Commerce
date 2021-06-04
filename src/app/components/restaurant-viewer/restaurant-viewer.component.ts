@@ -1,5 +1,9 @@
-import { BEat } from './../../shared/BEat';
+
 import { Component, OnInit } from '@angular/core';
+import { RistorantiService } from 'src/app/services/ristoranti.service';
+import { Router } from '@angular/router';
+import {allRestaurants} from '../../shared/food';
+import { Ristorante } from 'src/app/shared/Ristorante';
 
 @Component({
   selector: 'app-restaurant-viewer',
@@ -8,16 +12,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantViewerComponent implements OnInit {
 
-  restaurants = [];
+  foodList:Ristorante[] = allRestaurants.getRistoranti();
 
-  constructor() { 
-
-    // this.restaurants = ;
-
-
-  }
-
+  constructor(private router:Router, private serviceRistoranti: RistorantiService) {}
+  str : string = '';
   ngOnInit(): void {
+    
+    this.serviceRistoranti.$getStringaSearch.subscribe(msj =>{
+      this.str = msj;
+    });
   }
 
 }

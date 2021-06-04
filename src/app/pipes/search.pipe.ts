@@ -9,8 +9,9 @@ export class SearchPipe implements PipeTransform {
     if(!text){
       return list;
     }
-
-    return list.filter(food => food.indirizzo.toUpperCase().includes(text.toUpperCase()));
+    console.log("sono in pipe");
+    
+    return list.filter(food => food.nome.toUpperCase().includes(text.toUpperCase()));
   }
 
 }

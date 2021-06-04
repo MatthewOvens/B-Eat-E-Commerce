@@ -4,7 +4,16 @@
     <div class="btn btn_common">
       <i class="fas fa-search"></i>
     </div>
-    <input id="dish-search" class="input" type="search" [formControl]="search" spellcheck="false"
-        placeholder="Cerca per cucina o ristorante" autocomplete="off">
+    <input id="dish-search" class="input" type="search" (input)="searchFunction($any($event.target).value)" [(ngModel)]="text" spellcheck="false" autocomplete="off"
+        placeholder="Cerca per cucina o ristorante">
+        <!-- <button routerLink= "./page-one"  title="Cerca sta stronzata" class="sbx-google__submit">
+        
+          <svg role="img" aria-label="Search">
+            <use xlink:href="#sbx-icon-search-13"></use>
+          </svg>
+      
+        </button> -->
   </div>
 </div>
+
+<!-- <h1>MY value  {{this.search.value}}</h1> -->

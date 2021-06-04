@@ -13,4 +13,7 @@ export class BEat {
         return this.restaurants;
     }
 
+    setRistoranti(risto:Ristorante[]){
+        this.restaurants = risto;
+    }
 }

@@ -14,10 +14,10 @@
       
     <div role="search" class="sbx-google__wrapper">
         
-      <input type="search" name="search" placeholder="Scegli cadavere da mangiare.." autocomplete="off" required="required" class="sbx-google__input">
-      
+      <input type="search" name="search" [formControl]="search" spellcheck="false" placeholder="Scegli cadavere da mangiare.." autocomplete="off" required="required" class="sbx-google__input">
+      <!-- <h1>{{this.search.value}}</h1> -->
      <!-- <a href="http://localhost:4200/homepage/page-one" > -->
-      <button routerLink= "./page-one" title="Cerca sta stronzata" class="sbx-google__submit">
+      <button routerLink= "./page-one" (click)="updateString()" title="Cerca sta stronzata" class="sbx-google__submit">
         
         <svg role="img" aria-label="Search">
           <use xlink:href="#sbx-icon-search-13"></use>
