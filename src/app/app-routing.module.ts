@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PageOneComponent } from './pages/page-one/page-one.component';
@@ -11,7 +12,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'homepage/page-one',
+    path: 'page-one',
     component: PageOneComponent
   },
   {
@@ -20,8 +21,11 @@ const routes: Routes = [
     pathMatch: 'full' //
   },
   {
-    path:'homepage/page-one/pagina-ristorante',
+    path:'pagina-ristorante',
     component: PaginaRistoranteComponent
+  },{
+    path:'gallery',
+    component: GalleryComponent
   },
   {
     path: '**', //Wildcard route - generico
