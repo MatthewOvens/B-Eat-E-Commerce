@@ -9,9 +9,15 @@ export class SearchPipe implements PipeTransform {
     if(!text){
       return list;
     }
-    console.log("sono in pipe");
-    
-    return list.filter(food => food.nome.toUpperCase().includes(text.toUpperCase()));
+    let arr1 = list.filter(food => food.nome.toUpperCase().includes(text.toUpperCase()))
+    let arr2 = list.filter(food => food.cucina.toUpperCase().includes(text.toUpperCase()));
+
+    const mySet = new Set([
+      ...arr1,
+      ...arr2
+    ]);
+    return Array.from(mySet);
   }
+  
 
 }
