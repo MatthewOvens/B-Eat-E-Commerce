@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   },{
     path:'gallery',
     component: GalleryComponent
+  },{
+    path:'chi-siamo',
+    component: ChiSiamoComponent
   },
   {
     path: '**', //Wildcard route - generico
