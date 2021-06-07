@@ -23,6 +23,9 @@ import { SearchPipe } from './pipes/search.pipe';
 import { RestaurantViewerComponent } from './components/restaurant-viewer/restaurant-viewer.component';
 
 import { SearchBarInizialeComponent } from './components/search-bar-iniziale/search-bar-iniziale.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { CarouselGalleryComponent } from './components/carousel-gallery/carousel-gallery.component';
+import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { SearchBarInizialeComponent } from './components/search-bar-iniziale/sea
     RestaurantViewerComponent,
 
     SearchBarInizialeComponent,
+      GalleryComponent,
+      CarouselGalleryComponent,
+      ChiSiamoComponent,
 
 
   ],
