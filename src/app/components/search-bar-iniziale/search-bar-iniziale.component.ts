@@ -17,7 +17,6 @@ export class SearchBarInizialeComponent implements OnInit {
 
   search = new FormControl('');
 
-
   updateString(){
     this.serviceRistoranti.updateStringaSearch(this.search.value);
   }

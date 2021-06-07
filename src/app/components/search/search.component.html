@@ -4,7 +4,7 @@
     <div class="btn btn_common">
       <i class="fas fa-search"></i>
     </div>
-    <input id="dish-search" class="input" type="search" (input)="searchFunction($any($event.target).value)" [(ngModel)]="text" spellcheck="false" autocomplete="off"
+    <input id="dish-search" class="input" type="search" (input)="searchFunction()" [(ngModel)]="text" spellcheck="false" autocomplete="off"
         placeholder="Cerca per cucina o ristorante">
         <!-- <button routerLink= "./page-one"  title="Cerca sta stronzata" class="sbx-google__submit">
         

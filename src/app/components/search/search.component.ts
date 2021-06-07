@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
 
   // @Output('search') searchEmitter = new EventEmitter<string>();
 
-  searchFunction(text:string){
-    this.serviceRistoranti.updateStringaSearch(text);
+  searchFunction(){
+    this.serviceRistoranti.updateStringaSearch(this.text);
   }
 }
