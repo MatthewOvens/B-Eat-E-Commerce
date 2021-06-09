@@ -13,12 +13,18 @@
 
     </div> -->
 
-    <div *ngIf='foodList | search:str; let list'> <!-- search:str permette di filtrare effettivamente la lista -->
+    <div class="content" *ngIf='foodList | search:str; let list'> <!-- search:str permette di filtrare effettivamente la lista -->
         <div *ngFor='let i of list'>
             <h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1>
         </div>
         <div *ngIf='list.length === 0'>
-            No Results
+
+            <div class="noResult">
+               
+                <img class="image" src="../../../assets/drakeNothingHere.png">
+                <p class="text">No Results</p>
+
+            </div>
 
             <!-- visualizzazione immagine "errore" -->
 

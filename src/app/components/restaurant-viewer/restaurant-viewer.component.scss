@@ -1,6 +1,25 @@
+@font-face {
+    font-family: 'burgerFont';
+    src: url('../../../assets/Insanibc.ttf') format('truetype');
+}
 
 .viewer-container {
     background-color: red;
     margin-top: 20px;
 }
+
+.text {
+    font-family: burgerFont;
+    margin-left: 50px;
+    font-size: 6rem;
+}
+
+.noResult {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+// .content {
+
+// }
 
