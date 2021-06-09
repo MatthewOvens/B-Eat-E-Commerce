@@ -1,32 +1,56 @@
-.content{
-   
-    background-image: url("/../assets/light.jpg");
+@import url(//db.onlinewebfonts.com/c/febf37ead8b4b5230a74ef82850ffca4?family=LocalBreweryFour-Regular);
+
+@font-face {
+  font-family: "LocalBreweryFour-Regular";
+  src: url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.eot");
+  src: url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.woff") format("woff"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.svg#LocalBreweryFour-Regular") format("svg");
+}
+
+.content {
+
+  background-image: url("/../assets/light.jpg");
 
 }
 
-h1{
-    display: flex;
-    justify-content: center;
+h1 {
+  display: flex;
+  justify-content: center;
 
-    //background-image: url("/src/assets/light.jpg");
-    padding-top: 40px;
-    margin-bottom: 0;
+  //background-image: url("/src/assets/light.jpg");
+  padding-top: 40px;
+  margin-bottom: 0;
+
 }
 
-.frase1{
-    margin: 0 250px 0 250px;
-}
-.img1{
-    width: 100%;
-    margin-top: 40px;
+.frase1 {
+  margin: 0 250px 0 250px;
+
 }
 
-.img2{
-    width: 50%;
+.img1 {
+  width: 100%;
+  margin-top: 40px;
 }
 
-.content2{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+.img2 {
+  width: 50%;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.loghino {
+  height: 80px;
+  margin-top: 29px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.chi_siamo {
+  font-family: local_breweryfour, sans-serif;
+  font-size: 4.2222em;
+  line-height: .75;
 }
