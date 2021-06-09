@@ -1,9 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/febf37ead8b4b5230a74ef82850ffca4?family=LocalBreweryFour-Regular);
-
 @font-face {
-  font-family: "LocalBreweryFour-Regular";
-  src: url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.eot");
-  src: url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.woff") format("woff"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/febf37ead8b4b5230a74ef82850ffca4.svg#LocalBreweryFour-Regular") format("svg");
+  font-family: 'burgerFont';
+  src: url('../../../assets/Insanibc.ttf') format('truetype');
 }
 
 .content {
@@ -11,20 +8,30 @@
   background-image: url("/../assets/light.jpg");
 
 }
-
-h1 {
-  display: flex;
-  justify-content: center;
-
-  //background-image: url("/src/assets/light.jpg");
+h1{
+  margin-right: 20px;
+  color: rgba(45,43,43,1);
+}
+.titoloP{
   padding-top: 40px;
-  margin-bottom: 0;
-
+  font-family: burgerFont;
+  font-size: 2rem;
+  color: rgba(45,43,43,1);
 }
 
 .frase1 {
+  font-family: 'Nunito Sans', sans-serif;
+  padding-top: 120px;
   margin: 0 250px 0 250px;
-
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+}
+.frase2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 .img1 {
@@ -50,7 +57,38 @@ h1 {
 }
 
 .chi_siamo {
-  font-family: local_breweryfour, sans-serif;
-  font-size: 4.2222em;
-  line-height: .75;
+  font-family: burgerFont;
+  font-size: 7rem;
+  color: rgba(45,43,43,1);
+  display: flex;
+  justify-content: center;
+
+  //background-image: url("/src/assets/light.jpg");
+  padding-top: 150px;
+  margin-bottom: 0;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.prova{
+  display: flex;
+  flex-direction: column;
+}
+
+.striscia{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(73, 25, 25);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo1{
+  width: 359px;
+  height: 121px;
+  margin-top: 40px;
 }
