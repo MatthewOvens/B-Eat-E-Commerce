@@ -3,23 +3,50 @@
     src: url('../../../assets/Insanibc.ttf') format('truetype');
 }
 
-.viewer-container {
-    background-color: red;
-    margin-top: 20px;
+:host {
+    background-color: red !important;
 }
 
-.text {
-    font-family: burgerFont;
-    margin-left: 50px;
-    font-size: 6rem;
+.viewer-container {
+    // background-color: red;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.restaurant-box {
+    height: 200px;
+    width: 500px;
+    margin: 20px 20px 20px 20px;
+    background-color: red;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.restaurant-box:hover {
+    cursor: pointer;
+    transform:scale(1.07);
 }
 
 .noResult {
-    margin-top: 50%;
-    margin-left: 50%;
+    //css per immagine e testo
+    // margin-bottom: 5%;
+    text-align: center;
 }
 
-// .content {
+.text {
+    margin-top: 3%;
+    font-family: burgerFont;
+    font-size: 6rem;
+}
 
-// }
 

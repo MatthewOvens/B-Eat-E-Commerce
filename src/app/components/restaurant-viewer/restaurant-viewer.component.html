@@ -14,17 +14,13 @@
     </div> -->
 
     <div class="content" *ngIf='foodList | search:str; let list'> <!-- search:str permette di filtrare effettivamente la lista -->
-        <div *ngFor='let i of list'>
+        <div class="restaurant-box" *ngFor='let i of list'>
             <h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1>
         </div>
-        <div *ngIf='list.length === 0'>
-
-            <div class="noResult">
-               
-                <img class="image" src="../../../assets/drakeNothingHere.png">
-                <p class="text">No Results</p>
-
-            </div>
+        <div class="noResult" *ngIf='list.length === 0'>
+            
+            <img class="image" style="height: auto; width: 550px;" src="../../../assets/drakeNothingHere.png">
+            <p class="text">No Results</p>
 
             <!-- visualizzazione immagine "errore" -->
 
