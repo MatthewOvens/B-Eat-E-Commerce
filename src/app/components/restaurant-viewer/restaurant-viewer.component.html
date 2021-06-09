@@ -1,9 +1,29 @@
 
 
 <div class="viewer-container">
+<!--     
+    <div *ngIf="i === undefined">No restaurant specialized in this meat BRO</div> -->
 
-    <div class="restaurant-card" *ngFor = "let i of foodList|search:str"> <!-- search:str permette di filtrare effettivamente la lista -->
-        <h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1>
+    <!-- <div class="restaurant-card" *ngFor = "let i of foodList|search:str"> 
+        
+        <div *ngIf="i; then thenBlock else elseBlock"></div>
+
+        <ng-template #thenBlock><h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1></ng-template>
+        <ng-template #elseBlock><h1>OOOOOOH</h1></ng-template>
+
+    </div> -->
+
+    <div *ngIf='foodList | search:str; let list'> <!-- search:str permette di filtrare effettivamente la lista -->
+        <div *ngFor='let i of list'>
+            <h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1>
+        </div>
+        <div *ngIf='list.length === 0'>
+            No Results
+
+            <!-- visualizzazione immagine "errore" -->
+
+        </div>
     </div>
+      
 
 </div>

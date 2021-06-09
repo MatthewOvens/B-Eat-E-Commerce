@@ -18,7 +18,7 @@ export class SearchPipe implements PipeTransform {
       ...arr1,
       ...arr2
     ]);
-    return Array.from(mySet);  //Un insieme viene tradotto in un array
+    return Array.from(mySet);  //L'insieme filtrato viene tradotto in un array e ritornato
   }
   
 

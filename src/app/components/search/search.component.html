@@ -14,7 +14,7 @@
       
         </button> 
   </div>
-</div>  -->
+</div> -->
 
  <!-- <h1>MY value  {{this.search.value}}</h1>  -->
 
@@ -30,32 +30,30 @@
     </symbol>
   </svg>
     
-    <form novalidate="novalidate" class="searchbox sbx-google">
+  <form novalidate="novalidate" class="searchbox sbx-google">
+      
+    <div role="search" class="sbx-google__wrapper">
         
-      <div role="search" class="sbx-google__wrapper">
-          
-        <input id="dish-search" [formControl]="text" class="sbx-google__input" type="search" (input)="updateString()" spellcheck="false" autocomplete="off"
-        placeholder="Cerca per cucina o ristorante">
+      <input id="dish-search" [formControl]="text" class="sbx-google__input" type="search" (input)="updateString()" spellcheck="false" autocomplete="off"
+      placeholder="Cerca per cucina o ristorante">
+      
+      <button routerLink= "/page-one" (click)="updateString()" title="Cerca sta stronzata" class="sbx-google__submit">
         
-        <button routerLink= "/page-one" (click)="updateString()" title="Cerca sta stronzata" class="sbx-google__submit">
-          
-          <svg role="img" aria-label="Search">
-            <use xlink:href="#sbx-icon-search-13"></use>
-          </svg>
-      
-        </button>
-  
-        <button type="reset" (click)="resetText()" title="Cancella sta merda" class="sbx-google__reset">
-          <svg role="img" aria-label="Reset">
-            <use xlink:href="#sbx-icon-clear-3"></use>
-          </svg>
-      
-        </button>
-      
-      </div>
-  
-    </form>
-  </div>
+        <svg role="img" aria-label="Search">
+          <use xlink:href="#sbx-icon-search-13"></use>
+        </svg>
+    
+      </button>
+
+      <button type="reset" (click)="resetText()" title="Cancella sta merda" class="sbx-google__reset">
+        <svg role="img" aria-label="Reset">
+          <use xlink:href="#sbx-icon-clear-3"></use>
+        </svg>
+      </button>
+    
+    </div>
+  </form>
+</div>
     <!-- <script type="text/javascript">
       document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
     </script> -->

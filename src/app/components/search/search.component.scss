@@ -1,6 +1,6 @@
 .sbx-google {
-    display: inline-block;
-    position: relative;
+    // display: inline-block;
+    // position: relative;
     width: 600px;
     height: 70px;
     white-space: nowrap;
@@ -8,10 +8,9 @@
     font-size: 25px;
     z-index:1;
     // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    transform: translate(-50%,50%);
-    
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
   }
   
   .sbx-google__wrapper {

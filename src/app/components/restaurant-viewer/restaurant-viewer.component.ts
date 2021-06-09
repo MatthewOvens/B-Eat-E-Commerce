@@ -12,12 +12,16 @@ import { Ristorante } from 'src/app/shared/Ristorante';
 })
 export class RestaurantViewerComponent implements OnInit {
 
-  foodList: Ristorante[] = allRestaurants.getRistoranti();
+  //Il ! permette di evitare di inizializzarla nel costruttore o direttamente qua
+  foodList!: Ristorante[];   // = allRestaurants.getRistoranti()
 
   constructor(private router:Router, private serviceRistoranti: RistorantiService) {}
 
   str : string = '';
+  
   ngOnInit(): void {
+
+    this.foodList = allRestaurants.getRistoranti()
     
     //Sottoscrizione all'observable BehaviorSubject proveniente dal servizio ristoranti 
     this.serviceRistoranti.$getStringaSearch.subscribe(msj =>{
