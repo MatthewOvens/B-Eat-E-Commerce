@@ -8,23 +8,26 @@ import {RistorantiService} from '../../services/ristoranti.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  text:string = '';
+
+  text = new FormControl('');
+
   constructor(private router:Router, private serviceRistoranti: RistorantiService) { }
   
   ngOnInit(): void {
     // this.search.valueChanges.subscribe(value => this.searchEmitter.emit(value));
     this.serviceRistoranti.$getStringaSearch.subscribe(msj =>{  //chi si vuole suscrivere a me? metti in parametro
-      this.text = msj;
+      this.text.setValue(msj);
     });
-   
   }
 
-  // search = new FormControl('');
-
-
-  // @Output('search') searchEmitter = new EventEmitter<string>();
-
-  searchFunction(){
-    this.serviceRistoranti.updateStringaSearch(this.text);
+  updateString(){
+    console.log(this.text + "  da search component");
+    this.serviceRistoranti.updateStringaSearch(this.text.value);
   }
+
+  resetText() {
+    this.text.setValue("");
+    this.serviceRistoranti.updateStringaSearch(this.text.value);
+  }
+
 }

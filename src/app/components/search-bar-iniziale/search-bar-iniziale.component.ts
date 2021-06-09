@@ -10,14 +10,22 @@ import { RistorantiService } from 'src/app/services/ristoranti.service';
 })
 export class SearchBarInizialeComponent implements OnInit {
 
+  text = new FormControl('');
+
   constructor(private router:Router, private serviceRistoranti: RistorantiService) { }
 
   ngOnInit(): void {
   }
 
-  search = new FormControl('');
+  // search = new FormControl('');
 
   updateString(){
-    this.serviceRistoranti.updateStringaSearch(this.search.value);
+    console.log(this.text.value + "  da search component");
+    this.serviceRistoranti.updateStringaSearch(this.text.value);
   }
+
+  resetText() {
+    this.text.setValue("");
+  }
+
 }
