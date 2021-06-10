@@ -17,17 +17,19 @@ const routes: Routes = [
     component: PageOneComponent
   },
   {
-    path: '', //Redirec all'homepage in caso di path vuoto
+    path: '', //Redirect all'homepage in caso di path vuoto
     redirectTo: '/homepage',
-    pathMatch: 'full' //
+    pathMatch: 'full'
   },
   {
     path:'pagina-ristorante',
     component: PaginaRistoranteComponent
-  },{
+  },
+  {
     path:'gallery',
     component: GalleryComponent
-  },{
+  },
+  {
     path:'chi-siamo',
     component: ChiSiamoComponent
   },
