@@ -27,7 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
-import { RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
+import { DialogRestaurantCard, RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
 
 
 @NgModule({
@@ -50,6 +50,7 @@ import { RestaurantCardComponent } from './components/restaurant-card/restaurant
     CarouselGalleryComponent,
     ChiSiamoComponent,
     RestaurantCardComponent,
+    DialogRestaurantCard
   ],
   imports: [
     BrowserModule,

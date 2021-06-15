@@ -21,13 +21,13 @@
 .text-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 0.3rem;
 }
 
 .text {
     // margin-top: 3%;
     font-family: burgerFont;
     font-size: 1.5rem;
-    padding-top: 1rem;
 }
