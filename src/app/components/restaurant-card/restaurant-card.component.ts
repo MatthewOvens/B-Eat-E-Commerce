@@ -16,11 +16,12 @@ export class RestaurantCardComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+
   }
 
-  @Input() restaurantObject! : Ristorante;
-
-
+  //L'oggetto ristorante corrente, passato dal componente padre
+  @Input() restaurantObject! : Ristorante;  
+  
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogRestaurantCard, {
       width: '500px',

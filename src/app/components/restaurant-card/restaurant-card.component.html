@@ -1,4 +1,4 @@
-<div class="restaurant-box" (click)="openDialog()">
+<div class="restaurant-box" (click)="openDialog()" [style.backgroundImage]="'url(' + this.restaurantObject.getImg() + ')'">
 
     <div class="text-container">
         <p class="text">{{this.restaurantObject.getNome()}} </p>
@@ -6,6 +6,9 @@
             <p>Tipo di carne: </p>
             <p class="text"> {{this.restaurantObject.getCucina()}}</p>
         </div>
+
     </div>
+
+    <!-- [style.background-image]="'url(this.restaurantObject.getImg())'" -->
     
 </div>

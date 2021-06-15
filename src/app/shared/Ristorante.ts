@@ -3,7 +3,7 @@ import { Prodotto } from "./Prodotto";
 
 export class Ristorante{
     constructor(private id:number, private nome:string, private cucina:string,
-                private indirizzo:string, private menu:Prodotto[]){
+                private indirizzo:string, private menu:Prodotto[], private urlImg?:string){
                 // private img1:string, private img2:string){
 
     }
@@ -43,6 +43,14 @@ export class Ristorante{
 
     setMenu(menu:Prodotto[]){
         this.menu = menu;
+    }
+
+    getImg(){
+        return this.urlImg;
+    }
+
+    setImg(url:string){
+        this.urlImg = url;
     }
 
     // getImg1(){
