@@ -5,7 +5,7 @@
   </div>
   <br>
   <div class="contain">
-    <article class="meat-item"  *ngFor="let i of arraycarni" >
+    <article class="meat-item"  *ngFor="let i of arraycarni" routerLink="/page-one">
       <img class="product-img" src="{{i.urlimg}}" alt="" >
       <div class="center-description">
         <h2>{{i.name}}</h2>
