@@ -16,7 +16,6 @@ export class RestaurantCardComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-
   }
 
   //L'oggetto ristorante corrente, passato dal componente padre

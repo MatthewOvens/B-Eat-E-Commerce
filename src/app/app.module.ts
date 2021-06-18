@@ -28,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
 import { DialogRestaurantCard, RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { DialogRestaurantCard, RestaurantCardComponent } from './components/rest
     MatDialogModule,
     FormsModule,  //si puo anche togliere? Forse serve per l'ordine
     ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
