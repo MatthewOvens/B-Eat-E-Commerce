@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PageOneComponent } from './pages/page-one/page-one.component';
 import { PaginaRistoranteComponent } from './pages/pagina-ristorante/pagina-ristorante.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'chi-siamo',
     component: ChiSiamoComponent
+  },
+  {
+    path:'categories',
+    component: CategoriesComponent
   },
   {
     path: '**', //Wildcard route - generico

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'burgerFont';
+    src: url('../../../assets/Insanibc.ttf') format('truetype');
+}
+
+ 
+.product-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border-color: black;
+}
+
+.meat-item {
+    text-align:center;
+    font-family: 'burgerFont';
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.meat-item:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+    color: rgb(192, 180, 13);
+}
+
+.subtitle {
+    text-align:center;
+    font-family: 'burgerFont';  
+    margin-bottom: 30%;
+}
+
+
+.center-description {
+    margin-bottom: 50%;
+}
+
+.titolo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: 'burgerFont';
+    font-size: 70px;  
+    transition: all .2s ease-in-out;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.titolo:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   // width: 1000px;
+    flex-wrap: wrap;
+    font-size: 100%;
+    font: inherit;  
+}
+  
+:host {
+    display: flex;
+    justify-content: center;
+    background-image: url("/../assets/light.jpg");
+}
+
+@media screen and (max-width: 600px) {
+    .titolo{
+        flex-wrap: wrap;
+    }
+  }

@@ -15,7 +15,7 @@
 
     <div class="content" *ngIf='foodList | search:str; let list'> <!-- search:str permette di filtrare effettivamente la lista -->
         <div class="restaurant-box" *ngFor='let i of list'>
-            <h1>{{i.id}} {{i.nome}} {{i.cucina}}</h1>
+            <app-restaurant-cards></app-restaurant-cards>
         </div>
         <div class="noResult" *ngIf='list.length === 0'>
             
