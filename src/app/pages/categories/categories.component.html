@@ -1,0 +1,18 @@
+<div class="content">
+  <br>
+  <div>
+    <h1 class="titolo">LE NOSTRE CARNI</h1>
+  </div>
+  <br>
+  <div class="contain">
+    <article class="meat-item"  *ngFor="let i of arraycarni" >
+      <img class="product-img" src="{{i.urlimg}}" alt="" >
+      <div class="center-description">
+        <h2>{{i.name}}</h2>
+        <div class="subtitle">
+          <p>{{i.prezzo}}</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

@@ -27,8 +27,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+
 import { DialogRestaurantCard, RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
 import { MatIconModule } from '@angular/material/icon';
+
+import { CategoriesComponent } from './pages/categories/categories.component';
+
 
 
 @NgModule({
@@ -50,8 +54,10 @@ import { MatIconModule } from '@angular/material/icon';
     GalleryComponent,
     CarouselGalleryComponent,
     ChiSiamoComponent,
+    DialogRestaurantCard,
     RestaurantCardComponent,
-    DialogRestaurantCard
+    CategoriesComponent,
+
   ],
   imports: [
     BrowserModule,
