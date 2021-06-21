@@ -19,6 +19,7 @@ import { SearchBarInizialeComponent } from './components/search-bar-iniziale/sea
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CarouselGalleryComponent } from './components/carousel-gallery/carousel-gallery.component';
 import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
+import { CarrelloComponent } from './pages/carrello/carrello.component';
 
 //Import MODULI ESTERNI (Librerie)
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,9 +28,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+import { MatIconModule } from '@angular/material/icon';
+// import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {MatStepperModule} from '@angular/material/stepper';
+import { StepperComponent } from './components/stepper/stepper.component';
+
 
 import { DialogRestaurantCard, RestaurantCardComponent } from './components/restaurant-card/restaurant-card.component';
-import { MatIconModule } from '@angular/material/icon';
+
 
 import { CategoriesComponent } from './pages/categories/categories.component';
 
@@ -54,9 +60,14 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     GalleryComponent,
     CarouselGalleryComponent,
     ChiSiamoComponent,
+
     DialogRestaurantCard,
     RestaurantCardComponent,
     CategoriesComponent,
+
+
+    CarrelloComponent,
+    StepperComponent,
 
   ],
   imports: [
@@ -68,7 +79,13 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     MatDialogModule,
     FormsModule,  //si puo anche togliere? Forse serve per l'ordine
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    MatStepperModule,
+    // FormBuilder,
+    // FormGroup,
+    // Validators,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
