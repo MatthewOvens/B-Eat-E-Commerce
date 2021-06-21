@@ -11,5 +11,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
+export class IconOverviewExample {}

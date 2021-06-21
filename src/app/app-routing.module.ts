@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CarrelloComponent } from './pages/carrello/carrello.component';
 import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -34,9 +35,14 @@ const routes: Routes = [
     component: ChiSiamoComponent
   },
   {
+    path:'carrello',
+    component: CarrelloComponent
+  },
+  {
     path: '**', //Wildcard route - generico
     component: PageNotFoundComponent
   }
+  
 ];
 
 @NgModule({

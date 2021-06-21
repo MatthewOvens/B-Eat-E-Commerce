@@ -19,6 +19,7 @@ import { SearchBarInizialeComponent } from './components/search-bar-iniziale/sea
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CarouselGalleryComponent } from './components/carousel-gallery/carousel-gallery.component';
 import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
+import { CarrelloComponent } from './pages/carrello/carrello.component';
 
 //Import MODULI ESTERNI (Librerie)
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +28,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './pipes/search.pipe';
+import { MatIconModule } from '@angular/material/icon';
+// import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {MatStepperModule} from '@angular/material/stepper';
+import { StepperComponent } from './components/stepper/stepper.component';
+
 
 
 @NgModule({
@@ -48,6 +54,8 @@ import { SearchPipe } from './pipes/search.pipe';
     GalleryComponent,
     CarouselGalleryComponent,
     ChiSiamoComponent,
+    CarrelloComponent,
+    StepperComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +66,12 @@ import { SearchPipe } from './pipes/search.pipe';
     MatDialogModule,
     FormsModule,  //si puo anche togliere? Forse serve per l'ordine
     ReactiveFormsModule,
+    MatIconModule,
+    MatStepperModule,
+    // FormBuilder,
+    // FormGroup,
+    // Validators,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
